@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The GirlyPops - Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="shop-page">
+  <!-- Search (left) + Centered Logo -->
+  <header class="logo-strip">
+    <form class="search" role="search" action="search.html" method="get">
+      <label for="q">Search</label>
+      <input id="q" name="q" type="search" placeholder="Search products…">
+      <button type="submit">Search</button>
+    </form>
+
+    <a class="logo-link" href="index.html" aria-label="The GirlyPops — Home">
+      <img class="logo" src="logo/the-girlypops-logo.png" alt="The GirlyPops logo">
+    </a>
+
+    <div class="actions">
+      <a class="cart-btn" href="cart.html" aria-label="View cart">
+        <svg class="cart-icn" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 6h-.8a1 1 0 0 0-1 1.2l1.6 8.2A2 2 0 0 0 8.8 17H18a1 1 0 0 0 0-2h-9l-.2-1H18a2 2 0 0 0 1.9-1.5l1.1-4.3A1 1 0 0 0 20 7H8.2L8 6.1A1 1 0 0 0 7 6Zm2.5 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/>
+        </svg>
+        <span class="cart-count" aria-hidden="true">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Nav bar -->
+  <nav class="topbar" aria-label="Main">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT US</a>
+    <a href="girls.html">THE GIRLS</a>
+    <a href="shop.html" aria-current="page">SHOP</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <main>
+    <section class="shop-hero">
+      <h1>Shop Now! ✧･ﾟ: *</h1>
+      <p class="shop-lead">Pick your series and start unboxing the fun!!</p>
+    </section>
+
+    <section class="products">
+      <div class="products-grid">
+        <!-- Series 1 -->
+        <a class="product-card" href="series1.html" aria-label="The GirlyPops Series 1: Center Stage — $14.99">
+          <figure>
+            <img src="brand/poster-2.png" alt="Box art for The GirlyPops Series 1: Center Stage">
+            <figcaption>
+              <h3 class="product-title">The GirlyPops Series 1: Center Stage</h3>
+              <span class="product-price">$14.99</span>
+            </figcaption>
+          </figure>
+        </a>
+
+        <!-- Series 2 = Digital Darlings -->
+        <a class="product-card" href="series2.html" aria-label="The GirlyPops Series 2: Digital Darlings — $14.99">
+          <figure>
+            <!-- Replace image when ready -->
+            <img src="brand/poster-6.png" alt="Box art for The GirlyPops Series 2: Digital Darlings">
+            <figcaption>
+              <h3 class="product-title">The GirlyPops Series 2: Digital Darlings</h3>
+              <span class="product-price">$14.99</span>
+            </figcaption>
+          </figure>
+        </a>
+
+        <!-- Series 3 = Star Struck -->
+        <a class="product-card" href="series3.html" aria-label="The GirlyPops Series 3: Star Struck — $14.99">
+          <figure>
+            <!-- Replace image when ready -->
+            <img src="brand/poster-5.png" alt="Box art for The GirlyPops Series 3: Star Struck (PREORDER)">
+            <figcaption>
+              <h3 class="product-title">The GirlyPops Series 3: Star Struck (PREORDER)</h3>
+              <span class="product-price">$14.99</span>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

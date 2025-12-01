@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The GirlyPops - The Girls</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="girls-page">
+ <!-- Search (left) + Centered Logo -->
+  <header class="logo-strip">
+    <form class="search" role="search" action="search.html" method="get">
+      <label for="q">Search</label>
+      <input id="q" name="q" type="search" placeholder="Search products…">
+      <button type="submit">Search</button>
+    </form>
+
+    <a class="logo-link" href="index.html" aria-label="The GirlyPops — Home">
+      <img class="logo" src="logo/the-girlypops-logo.png" alt="The GirlyPops logo">
+    </a>
+
+    <div class="actions">
+      <a class="cart-btn" href="cart.html" aria-label="View cart">
+        <svg class="cart-icn" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 6h-.8a1 1 0 0 0-1 1.2l1.6 8.2A2 2 0 0 0 8.8 17H18a1 1 0 0 0 0-2h-9l-.2-1H18a2 2 0 0 0 1.9-1.5l1.1-4.3A1 1 0 0 0 20 7H8.2L8 6.1A1 1 0 0 0 7 6Zm2.5 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/>
+        </svg>
+        <span class="cart-count" aria-hidden="true">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Nav bar -->
+  <nav class="topbar" aria-label="Main">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT US</a>
+    <a href="girls.html" aria-current="page">THE GIRLS</a>
+    <a href="shop.html">SHOP</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <main class="girls-page">
+    <section class="girls-hero">
+      <div class="container">
+        <section class="girls-hero">
+          <h1>Meet the Girls</h1>
+        </section>
+        <p class="lead">Click a character to learn more about her!</p>
+      </div>
+    </section>
+
+    <!-- Thumbnails -->
+    <section class="girls-grid-section">
+      <div class="container">
+        <div class="girls-grid" role="list" aria-label="Characters">
+          <button class="girl-card" role="listitem" data-girl="anh" aria-controls="girl-detail" aria-expanded="false">
+            <img src="the-girls/anh-oc.png" alt="Anh — thumbnail">
+            <span class="girl-name">Anh</span>
+          </button>
+
+          <button class="girl-card" role="listitem" data-girl="chaney" aria-controls="girl-detail" aria-expanded="false">
+            <img src="the-girls/chaney-oc.png" alt="Chaney — thumbnail">
+            <span class="girl-name">Chaney</span>
+          </button>
+
+          <button class="girl-card" role="listitem" data-girl="ella" aria-controls="girl-detail" aria-expanded="false">
+            <img src="the-girls/ella-oc.png" alt="Ella — thumbnail">
+            <span class="girl-name">Ella</span>
+          </button>
+
+          <button class="girl-card" role="listitem" data-girl="nadia" aria-controls="girl-detail" aria-expanded="false">
+            <img src="the-girls/nadia-oc.png" alt="Nadia — thumbnail">
+            <span class="girl-name">Nadia</span>
+          </button>
+
+          <button class="girl-card" role="listitem" data-girl="gabi" aria-controls="girl-detail" aria-expanded="false">
+            <img src="the-girls/gabi-oc.png" alt="Gabi — thumbnail">
+            <span class="girl-name">Gabi</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detail panel (appears under the photos) -->
+    <section id="girl-detail" class="girl-detail-section" aria-labelledby="girl-detail-title" hidden>
+      <div class="container">
+        <div class="girl-detail">
+          <div class="girl-detail-media">
+            <img id="girl-detail-img" src="" alt="">
+          </div>
+          <div class="girl-detail-text">
+            <h2 id="girl-detail-title">Character Name</h2>
+            <div id="girl-detail-lore"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- JS to swap the detail (supports multi-paragraph lore) -->
+  <script>
+  (function(){
+    const GIRLS = {
+      anh: {
+        name: "Anh",
+        img: "the-girls/anh-oc.png",
+        alt: "Anh — full image",
+        lore: [
+          "Anh's stage presence is cool, distant, and aloof, but this icy facade is just a guard. When she's with her friends, she's the vibrant, comedic heart of the group, effortlessly setting the mood with her humor. Despite her toughness, she's surprisingly sensitive and prone to crying.",
+          "She hails from a prestigious, wealthy family renowned in the dental industry. Though her parents fully support her music, Anh keeps her background private, fearing she'll be labeled a \"rich girl with a hobby.\" She's determined to let her music speak first, not her family's name.",
+          "Her musical path began after she secretly dropped out of a soul-crushing Dentistry major in college. Now, she focuses entirely on her craft, teaching herself guitar and taking humble gigs at local bars and parks. This drive to hustle, despite her privilege, proves her commitment. She may have a rich background, but she remains humble and generous, prioritizing authentic connection over inherited status. She's the leader who balances sharp wits with deep emotion, bringing unexpected warmth to The GirlyPops."
+        ]
+      },
+      chaney: {
+        name: "Chaney",
+        img: "the-girls/chaney-oc.png",
+        alt: "Chaney — full image",
+        lore: [
+          "Chaney has always craved the spotlight, whether it was at the roller rink or the main stage. Growing up in Miami, near her family’s smoothie stand, her style evolved into a bold mix of beach chic and late night club gear. She became a fiercely self-taught dancer, mastering her moves by drilling routines until the floorboards creaked.",
+          "Chaney's life took off at a regional dance competition, where her gravity-defying hair flips and explosive stage presence captivated observers. Connecting with her future groupmates, she helped form The GirlyPops, bringing the necessary edge to their hyperfemme sound. Chaney quickly became the vibrant heart and lead choreographer of The GirlyPops.",
+          "Her iconic ruffled bellbottom pants and peek-a-boo blue hair streaks quickly became a defining Y2K fashion trend. Though she appears carefree, she is the secret perfectionist, drilling every move until it’s razor sharp. Her goal is simple: to make music that feels like a massive, unstoppable wave washing over the world."
+        ]
+      },
+      gabi: {
+        name: "Gabi",
+        img: "the-girls/gabi-oc.png",
+        alt: "Gabi — full image",
+        lore: [
+          "Gabi is the soulful voice and lyrical heart of The GirlyPops. Raised near an Oregon state park, her childhood was spent exploring nature, sketching flora, and playing her acoustic guitar by a secret waterfall. Her style naturally reflects this, favoring earthy tones, comfortable fabrics, and a touch of handmade charm, providing a unique contrast to the synthetic Y2K aesthetic. Her voice possesses a gentle yet hauntingly beautiful quality that commands attention.",
+          "Gabi was discovered reluctantly performing an original song at a cafe's open mic night, where her unique sound captivated the audience. Initially hesitant to enter the pop scene, she joined The GirlyPops for the promise of authentic artistic expression.",
+          "She grounds the group's high energy sound by writing the emotional ballads and intricate harmonies, adding depth and introspection to their tracks. She is the calming force for her bandmates, often reminding them to breathe, and an unexpected warrior when they need support. Gabi ensures The GirlyPops connects with its audience on a deep level, inspiring the group to \"grow\" both as artists and individuals."
+        ]
+      },
+      ella: {
+        name: "Ella",
+        img: "the-girls/ella-oc.png",
+        alt: "Ella — full image",
+        lore: [
+          "Ella is the group’s undeniable ray of sunshine, bringing whimsy and cheer wherever she goes. Growing up in suburban Atlanta, Ella's world was decorated with glitter and flowers. She adored fashion, favoring pastels and floral prints, and constantly experimented with accessories, honing her naturally endearing stage presence through backyard talent shows with her siblings.",
+          "Her sweet yet surprisingly strong vocal talent was first noticed when she charmed a crowd at a school fair. Her naturally optimistic and fresh vibe made her an instant magnet for attention. She quickly connected with her future bandmates to help form The GirlyPops.",
+          "Ella became the charismatic face of the group, with her radiant smile earning her an instant fan following. She is known for incorporating floral motifs into all her looks, from embroidered denim to flower-adorned pink hair streaks. Ella is the group's emotional cheerleader and lead singer, always ready with an encouraging hug, balancing the edgier elements with genuine joy. While appearing delicate, she is fiercely loyal and dedicated to her craft, believing music, like flowers, has the power to brighten days and bring people together."
+        ]
+      },
+      nadia: {
+        name: "Nadia",
+        img: "the-girls/nadia-oc.png",
+        alt: "Nadia — full image",
+        lore: [
+          "Nadia blends academic precision with pop passion. Growing up in Boston in a family of educators, Nadia was a meticulous class president whose sharp mind was secretly applied to mastering dance routines seen on MTV. She has a fierce competitive streak and a deep love for energetic music.",
+          "Nadia started writing clever, rhyming rap verses, combining sweetness with surprising speed and wit. She showcased her unique blend of sweet vocals and articulate rapping online, where she connected with her future groupmates to form The GirlyPops. Her natural charisma and planning skills quickly established her as the group's lead songwriter and rapper!",
+          "Nadia is the strategic mind, helping organize the group and directing their unique style. Her stage presence is a powerful mix of innocent charm and strength during her playful, tongue-in-cheek rap breaks. She is the group's cheerleader and meticulous planner, proving that being sweet doesn't stop her from being a major force."
+        ]
+      }
+    };
+
+    const cards = document.querySelectorAll('.girl-card');
+    const detailSection = document.getElementById('girl-detail');
+    const detailImg = document.getElementById('girl-detail-img');
+    const detailTitle = document.getElementById('girl-detail-title');
+    const detailLore = document.getElementById('girl-detail-lore');
+
+    function showGirl(id, triggerBtn){
+      const g = GIRLS[id];
+      if(!g) return;
+
+      // Fill media + title
+      detailImg.src = g.img;
+      detailImg.alt = g.alt || (g.name + " — full image");
+      detailTitle.textContent = g.name;
+
+      // Insert multi-paragraph lore
+      detailLore.innerHTML = Array.isArray(g.lore)
+        ? g.lore.map(p => `<p>${p}</p>`).join("")
+        : `<p>${g.lore}</p>`;
+
+      // Reveal section
+      detailSection.hidden = false;
+
+      // Update selection state
+      cards.forEach(btn => {
+        btn.classList.toggle('is-selected', btn === triggerBtn);
+        btn.setAttribute('aria-expanded', btn === triggerBtn ? 'true' : 'false');
+      });
+
+      // Scroll into view (optional)
+      detailSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    cards.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-girl');
+        showGirl(id, btn);
+      });
+    });
+
+    // Uncomment to show one by default:
+    // showGirl('anh', document.querySelector('[data-girl="anh"]'));
+  })();
+  </script>
+
+
+</body>
+</html>

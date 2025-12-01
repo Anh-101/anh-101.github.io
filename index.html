@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The GirlyPops</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body class="homepage">
+  <!-- Your header (unchanged) -->
+  <header class="logo-strip">
+    <form class="search" role="search" action="search.html" method="get">
+      <label for="q">Search</label>
+      <input id="q" name="q" type="search" placeholder="Search products…">
+      <button type="submit">Search</button>
+    </form>
+
+    <a class="logo-link" href="index.html" aria-label="The GirlyPops — Home">
+      <img class="logo" src="logo/the-girlypops-logo.png" alt="The GirlyPops logo">
+    </a>
+
+    <div class="actions">
+      <a class="cart-btn" href="cart.html" aria-label="View cart">
+        <svg class="cart-icn" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 6h-.8a1 1 0 0 0-1 1.2l1.6 8.2A2 2 0 0 0 8.8 17H18a1 1 0 0 0 0-2h-9l-.2-1H18a2 2 0 0 0 1.9-1.5l1.1-4.3A1 1 0 0 0 20 7H8.2L8 6.1A1 1 0 0 0 7 6Zm2.5 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/>
+        </svg>
+        <span class="cart-count" aria-hidden="true">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Your nav (unchanged) -->
+  <nav class="topbar" aria-label="Main">
+    <a href="index.html" aria-current="page">HOME</a>
+    <a href="about.html">ABOUT US</a>
+    <a href="girls.html">THE GIRLS</a>
+    <a href="shop.html">SHOP</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+  <!-- Friend's content starts here (scoped so it won't override anything) -->
+  <div class="announcement-bar">
+    Now Available: Series 1- Center Stage <b>AND</b> Series 2- Digital Darlings!! 𝄞⨾💿✮˚.⋆
+  </div>
+
+  <main>
+    <div class="banner">
+      <img src="brand/poster-3.png" alt="Featured collection banner: Bright pink and purple design with a new GirlyPop doll illustration and text: 'New Pop Drop!'">
+    </div>
+
+    <section class="intro-section">
+      <div class="title-container">
+        <span class="star-icon">⋆⋅✦</span>
+        <h2>Welcome to The GirlyPops World!</h2>
+        <span class="star-icon">✦⋅⋆</span>
+      </div>
+
+      <div class="content-row">
+        <div class="poster poster-2">
+          <img src="brand/poster-4.png" alt="Poster featuring a detailed illustration of a GirlyPops blindbox.">
+        </div>
+
+        <div class="brand-info">
+          <p class="brand-text" style="font-size: 18px;">
+            🎤 Ready to collect the ultimate pop star squad? Choose your vibe:
+            <strong>Center Stage</strong> or <strong>Digital Darlings</strong>!
+          </p>
+          <p class="brand-text" style="font-size: 16px; color: var(--hp-purple); margin-top: 10px;">
+            Each mystery box contains a unique, diverse, and creative Pop Star girl member, ready to join your collection!
+            <br><br>
+          </p>
+          <button class="brand-button" onclick="openModal()">💖 DISCOVER OUR STORY</button>
+        </div>
+
+        <div class="poster poster-1">
+          <img src="brand/poster-2.png" alt="Poster featuring a group of GirlyPop dolls in different outfits and poses.">
+        </div>
+      </div>
+    </section>
+
+    <hr style="border: 1px dashed #ff69b4; margin: 60px 0;">
+
+    <section class="social-section">
+      <a href="https://www.instagram.com/thegirlypopsbrand/" target="_blank" class="instagram-box">
+        <span class="insta-icon">📸</span>
+        Join the Pop Party! Follow Us!
+        <small style="display: block; font-size: 16px; font-weight: 500; margin-top: 5px;">@thegirlypopsbrand</small>
+      </a>
+    </section>
+  </main>
+
+  <!-- Decorative stars (won’t block clicks) -->
+  <div class="decoration left-star">✨</div>
+  <div class="decoration right-star-top">✦</div>
+  <div class="decoration right-star-bottom">✦</div>
+
+  <!-- Modal -->
+  <div id="brandModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <h3>✨ The Story Behind The GirlyPops ✨</h3>
+      <p>Welcome to the world of The GirlyPops! We are five dedicated Digital Media students from UCF, and we created this brand to deliver the ultimate Y2K Pop aesthetic of your dreams.</p>
+      <p>Our shared passion for collectibles and pop culture led us straight to the idea of a blind box brand. We blended our love for high-energy 'pop girl groups' (like KATSEYE!) with our own personal obsession with Popmart blind boxes, creating a true best-of-both-worlds scenario for collectors.</p>
+      <p>Our team is our own 'Girl Group': Chaney handled project management, Nadia brought the art to life, Anh managed the programming, and Ella & Gabi perfected the design. We hope you enjoy exploring The GirlyPops and fall in love with our characters as much as we have!</p>
+      <p style="text-align: center;">-- Ready to unbox the magic? 💜 --</p>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById('brandModal');
+    function openModal(){ modal.style.display = 'block'; }
+    function closeModal(){ modal.style.display = 'none'; }
+    window.onclick = function(e){ if(e.target === modal){ closeModal(); } };
+  </script>
+</body>
+</html>

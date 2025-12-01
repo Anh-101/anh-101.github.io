@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The GirlyPops - About</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="about-confetti">
+ <!-- Search (left) + Centered Logo -->
+  <header class="logo-strip">
+    <form class="search" role="search" action="search.html" method="get">
+      <label for="q">Search</label>
+      <input id="q" name="q" type="search" placeholder="Search products…">
+      <button type="submit">Search</button>
+    </form>
+
+    <a class="logo-link" href="index.html" aria-label="The GirlyPops — Home">
+      <img class="logo" src="logo/the-girlypops-logo.png" alt="The GirlyPops logo">
+    </a>
+
+    <div class="actions">
+      <a class="cart-btn" href="cart.html" aria-label="View cart">
+        <svg class="cart-icn" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 6h-.8a1 1 0 0 0-1 1.2l1.6 8.2A2 2 0 0 0 8.8 17H18a1 1 0 0 0 0-2h-9l-.2-1H18a2 2 0 0 0 1.9-1.5l1.1-4.3A1 1 0 0 0 20 7H8.2L8 6.1A1 1 0 0 0 7 6Zm2.5 14a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/>
+        </svg>
+        <span class="cart-count" aria-hidden="true">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Nav bar -->
+  <nav class="topbar" aria-label="Main">
+    <a href="index.html">HOME</a>
+    <a href="about.html" aria-current="page">ABOUT US</a>
+    <a href="girls.html">THE GIRLS</a>
+    <a href="shop.html">SHOP</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+
+<!-- About Us Content -->
+<section id="about-girlypops" class="about-section" aria-labelledby="about-girlypops-title">
+  <div class="container">
+    <header>
+      <h1 id="about-girlypops-title">About GirlyPops - How it Started</h1>
+      <p class="lead">
+        We’re five girls who bonded over blind boxes, pop culture, and music-and turned that energy into a digital media project.
+        GirlyPops began in our Project Management class when we were asked to form a team and create a digital artifact. After a few
+        brainstorming sessions, we landed on a website that celebrates blind-box culture through original characters and a playful brand world.
+        Here you’ll find our OCs, process sketches, and a Y2K-tinted brand system brought to life through clean UI.
+      </p>
+    </header>
+  </div>
+</section>
+
+<section id="about-process" class="about-section" aria-labelledby="about-process-title">
+  <div class="container">
+    <h2 id="about-process-title">About the Process</h2>
+
+    <p>
+      To create our OCs, each of us started with inspirations-Pinterest boards, favorite artists, films, songs, and Y2K aesthetics
+      that shaped our characters. We compared notes, pulled common themes, and refined moodboards into color palettes and shapes. 
+    </p>
+    <p>
+      Our artist, <strong>Nadia Lee</strong>, brought our visions to life with chibi sketches for each character, capturing their personalities
+      in cute, expressive forms.
+    </p>
+    <p>
+      From there, the design/programming crew translated the aesthetic into brand colors, type choices, and layout ideas.
+      Wireframes became page mockups; mockups became interactive prototypes. Throughout, we iterated based on readability, accessibility,
+      and how “fun” the experience felt.
+    </p>
+
+    <div class="process-gallery" role="list" aria-label="Process Images">
+      <!-- Single hero sketch -->
+      <figure role="listitem" class="fig-hero">
+        <img src="process/sketches-award.png" alt="Early chibi character sketches for award ceremony/red carpet">
+        <figcaption><b>Early chibi character sketches for award ceremony/red carpet by Nadia Lee.</b><br>
+        From left to right, top to bottom: Chaney, Anh, Gabi, Nadia, Ella.</figcaption>
+      </figure>
+
+      <!-- OC 1–5 side-by-side -->
+      <figure role="listitem" class="fig-oc">
+        <div class="oc-row">
+          <img src="process/sketch-oc1.png" alt="Chibi concept sketch: OC 1">
+          <img src="process/sketch-oc2.png" alt="Chibi concept sketch: OC 2">
+          <img src="process/sketch-oc3.png" alt="Chibi concept sketch: OC 3">
+          <img src="process/sketch-oc4.png" alt="Chibi concept sketch: OC 4">
+          <img src="process/sketch-oc5.png" alt="Chibi concept sketch: OC 5">
+        </div>
+        <figcaption><b>Chibi concept sketches by Nadia Lee.</b><br>
+        From left to right: Chaney, Gabi, Anh, Ella, Nadia.</figcaption>
+      </figure>
+
+      <!-- Layout sketches side-by-side -->
+      <figure role="listitem" class="fig-layouts">
+        <div class="layout-row">
+          <img src="process/layout-sketch1.png" alt="Website wireframe sketch: page structure 1">
+          <img src="process/layout-sketch2.png" alt="Website wireframe sketch: page structure 2">
+        </div>
+        <figcaption><b>Initial website layout sketches and wireframes by Gabriela Rodriguez.</b></figcaption>
+      </figure>
+
+      <!-- Brand colors + logo side-by-side -->
+      <figure role="listitem" class="fig-brand">
+        <div class="brand-stack">
+          <img src="process/brand-colors.png" alt="Brand color palette swatches">
+          <img src="logo/the-girlypops-logo.png" alt="GirlyPops logo">
+        </div>
+        <figcaption><b>Brand color strip and palette testing. Logo by Anh Dang, color palette by Gabriela Rodriguez.</b></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="about-team" class="about-section" aria-labelledby="about-team-title">
+  <div class="container team-card">
+    <h2 id="about-team-title">About the Team</h2>
+    <ul class="team-list" role="list">
+      <li class="team-member" role="listitem">
+        <h3>Chaney Hunt <span class="role">— Project Manager</span></h3>
+        <p>Coordinates timelines, deliverables, and documentation. Keeps scope in check and the train on time.</p>
+        <p class="team-social">
+          <svg class="ig-icn" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5a5.5 5.5 0 1 1 0 11.001 5.5 5.5 0 0 1 0-11Zm0 2a3.5 3.5 0 1 0 0 7.001 3.5 3.5 0 0 0 0-7ZM18 6.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg>
+          <a href="https://www.instagram.com/chaneyhunt/" target="_blank" rel="noopener" aria-label="Chaney Hunt on Instagram">@chaneyhunt</a>
+        </p>
+      </li>
+
+      <li class="team-member" role="listitem">
+        <h3>Nadia Lee <span class="role">— Artist</span></h3>
+        <p>Chibi character sketches, linework, and final art passes. Shapes the visual personality of each OC.</p>
+        <p class="team-social">
+          <svg class="ig-icn" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5a5.5 5.5 0 1 1 0 11.001 5.5 5.5 0 0 1 0-11Zm0 2a3.5 3.5 0 1 0 0 7.001 3.5 3.5 0 0 0 0-7ZM18 6.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg>
+          <a href="https://www.instagram.com/nadiakorinl/" target="_blank" rel="noopener" aria-label="Nadia Lee on Instagram">@nadiakorinl</a>
+        </p>
+      </li>
+
+      <li class="team-member" role="listitem">
+        <h3>Anh Dang <span class="role">— Programmer</span></h3>
+        <p>Front-end build (HTML/CSS/JS). Implements layouts, animations, and accessibility details.</p>
+        <p class="team-social">
+          <svg class="ig-icn" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5a5.5 5.5 0 1 1 0 11.001 5.5 5.5 0 0 1 0-11Zm0 2a3.5 3.5 0 1 0 0 7.001 3.5 3.5 0 0 0 0-7ZM18 6.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg>
+          <a href="https://www.instagram.com/anhtskii/" target="_blank" rel="noopener" aria-label="Anh Dang on Instagram">@anhtskii</a>
+        </p>
+      </li>
+
+      <li class="team-member" role="listitem">
+        <h3>Ella Hesselbach <span class="role">— Designer</span></h3>
+        <p>UI layouts, type hierarchy, and components. Turns sketches into clean, consistent interfaces.</p>
+        <p class="team-social">
+          <svg class="ig-icn" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5a5.5 5.5 0 1 1 0 11.001 5.5 5.5 0 0 1 0-11Zm0 2a3.5 3.5 0 1 0 0 7.001 3.5 3.5 0 0 0 0-7ZM18 6.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg>
+          <a href="https://www.instagram.com/ella._hesselbach/" target="_blank" rel="noopener" aria-label="Ella Hesselbach on Instagram">@ella._hesselbach</a>
+        </p>
+      </li>
+
+      <li class="team-member" role="listitem">
+        <h3>Gabriela Rodriguez <span class="role">— Designer</span></h3>
+        <p>Color direction, iconography, and packaging/asset variations. Bridges brand and web.</p>
+        <p class="team-social">
+          <svg class="ig-icn" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5a5.5 5.5 0 1 1 0 11.001 5.5 5.5 0 0 1 0-11Zm0 2a3.5 3.5 0 1 0 0 7.001 3.5 3.5 0 0 0 0-7ZM18 6.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg>
+          <a href="https://www.instagram.com/rod.j.g/" target="_blank" rel="noopener" aria-label="Gabriela Rodriguez on Instagram">@rod.j.g</a>
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="about-goal" class="about-section" aria-labelledby="about-goal-title">
+  <div class="container">
+    <h2 id="about-goal-title">Our Goal</h2>
+    <p class="lead">
+      We’re just five friends making stuff we love. Our goal is to share our love for blind boxes, pop culture, and music and have fun building it together. We sketch late at night, swap ideas, and post our process so you can see the messy middle, not just the final.
+      If you’re into this kind of thing, jump in, send us your thoughts, and help us make the next drop even cooler!
+    </p>
+  </div>
+</section>
+
+</body>
+</html>
